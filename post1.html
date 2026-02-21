@@ -43,6 +43,33 @@
 In this ontology, the relationships between diseases, medications, and their corresponding effects are automatically inferred through OWL restrictions. Specifically, each disease class is linked to its physiological or clinical consequences using a diseaseHasEffect object property, while each medication class is associated with the effects it produces via medicationHasEffect. By defining OWL class restrictions—for example, specifying that a particular disease must have a certain effect or that a medication must produce a certain effect—these relationships are implicitly enforced in the ontology. As a result, any instance of a disease or medication automatically inherits the corresponding effect relationships, reducing manual annotation and ensuring consistency across the knowledge base.
 </p>
 
+
+<p>
+As an example, in the ontology, a disease class can have restrictions linking it to specific physiological effects. For instance, the disease class <strong>Transplants (ICD10_Z94)</strong> is modeled with the following OWL restriction:
+</p>
+
+<div class="code-example" style="background-color:#f4f4f4; padding:10px; border-radius:8px; overflow:auto;">
+<pre>
+&lt;owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#ICD10_Z94"&gt;
+    &lt;rdfs:subClassOf rdf:resource="http://www.semanticweb.org/certh/nightingale#Disease"/&gt;
+    &lt;rdfs:subClassOf&gt;
+        &lt;owl:Restriction&gt;
+            &lt;owl:onProperty rdf:resource="http://www.semanticweb.org/certh/nightingale#diseaseHasEffect"/&gt;
+            &lt;owl:hasValue rdf:resource="http://www.semanticweb.org/certh/nightingale#limit_response_to_hypotension"/&gt;
+        &lt;/owl:Restriction&gt;
+    &lt;/rdfs:subClassOf&gt;
+    &lt;nightingale:icd10code&gt;ICD10_Z94&lt;/nightingale:icd10code&gt;
+    &lt;nightingale:snomedCUI&gt;C0332835&lt;/nightingale:snomedCUI&gt;
+    &lt;nightingale:snomedID rdf:resource="http://purl.bioontology.org/ontology/SNOMEDCT/24486003"/&gt;
+    &lt;rdfs:label&gt;Transplants&lt;/rdfs:label&gt;
+&lt;/owl:Class&gt;
+</pre>
+</div>
+
+<p>
+This restriction specifies that the disease class <strong>Transplants</strong> has a physiological effect, <em>limit_response_to_hypotension</em>, through the <code>diseaseHasEffect</code> property. By including <strong>ICD-10 codes</strong> (like <code>ICD10_Z94</code>) and <strong>SNOMED IDs</strong> (like <code>C0332835</code>), the ontology supports federated queries across biomedical databases. This allows retrieving additional information from external resources, improving interoperability and enriching decision support during emergency scenarios.
+</p>
+
             <br>
             <a href="blog.html" class="purple-text-button">← Back to Blog</a>
         </div>
