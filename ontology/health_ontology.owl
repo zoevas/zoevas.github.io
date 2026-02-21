@@ -1,0 +1,1482 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/certh/nightingale"
+     xml:base="http://www.semanticweb.org/certh/nightingale"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:nightingale="http://www.semanticweb.org/certh/nightingale#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/certh/nightingale">
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ogms/2021-08-19/ogms.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#atcCUI -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/certh/nightingale#atcCUI">
+        <rdfs:label>atcCUI</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#atcID -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/certh/nightingale#atcID">
+        <rdfs:label>atcID</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#icd10code -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/certh/nightingale#icd10code">
+        <rdfs:label>icd10code</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#snomedCUI -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/certh/nightingale#snomedCUI"/>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#snomedID -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/certh/nightingale#snomedID">
+        <rdfs:label>snomedID</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#causes -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#causes">
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Medication"/>
+        <rdfs:range rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Shock"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#hasAge -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasAge">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/certh/ontologies/nightingale#Victim"/>
+        <rdfs:range rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Age"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#hasBiologicalSex -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasBiologicalSex">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/certh/ontologies/nightingale#Victim"/>
+        <rdfs:range rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Biological_Sex"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#hasEffect -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasEffect">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/certh/nightingale#Medical_Record"/>
+        <rdfs:range rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Effect"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#hasEthnicity -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#hasEthnicity">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/certh/ontologies/nightingale#Victim"/>
+        <rdfs:range rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Ethnicity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#receivesMedication -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/ontologies/ont.owl#receivesMedication">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/certh/ontologies/nightingale#Victim"/>
+        <rdfs:range rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Medication"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#allergyHasEffect -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/certh/nightingale#allergyHasEffect">
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#hasEffect"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/certh/nightingale#Allergy"/>
+        <rdfs:range rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Effect"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#diseaseHasEffect -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/certh/nightingale#diseaseHasEffect">
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#hasEffect"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/certh/nightingale#Disease"/>
+        <rdfs:range rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Effect"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#hasAllergy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/certh/nightingale#hasAllergy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/certh/ontologies/nightingale#Victim"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/certh/nightingale#Allergy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#hasDisease -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/certh/nightingale#hasDisease">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/certh/ontologies/nightingale#Victim"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/certh/nightingale#Disease"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#medicationHasEffect -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/certh/nightingale#medicationHasEffect">
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#hasEffect"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Medication"/>
+        <rdfs:range rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Effect"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#hasVictimID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/certh/nightingale#hasVictimID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/certh/ontologies/nightingale#Victim"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Age -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Age">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Alert -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Alert">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Biological_Sex -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Biological_Sex">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Disaster -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Disaster">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Effect -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Effect">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000061"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Ethnicity -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Ethnicity">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Female -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Female">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Biological_Sex"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Field_Intervetion -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Field_Intervetion">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Heart_Rate -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Heart_Rate">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000029"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Incident -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Incident">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Male -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Male">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Biological_Sex"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Man-made_Disaster -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Man-made_Disaster">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Disaster"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Medication -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Medication">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Natural_Disaster -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Natural_Disaster">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Disaster"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Report -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Report">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Shock -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Shock">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Systolic_Blood_Presure -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Systolic_Blood_Presure">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000029"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Temperature -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Temperature">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000029"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Triage -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Triage">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#ATC_B01 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#ATC_B01">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Medication"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/certh/nightingale#medicationHasEffect"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/certh/nightingale#hemorrhage"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <nightingale:atcCUI>C1704311</nightingale:atcCUI>
+        <nightingale:atcID rdf:resource="http://purl.bioontology.org/ontology/ATC/B01A"/>
+        <rdfs:label>Blood thinners</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#ATC_C01 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#ATC_C01">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Medication"/>
+        <nightingale:atcCUI>C3654025</nightingale:atcCUI>
+        <nightingale:atcID rdf:resource="http://purl.bioontology.org/ontology/ATC/C01"/>
+        <rdfs:label>Cardiac therapy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#ATC_C07 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#ATC_C07">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Medication"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/certh/nightingale#medicationHasEffect"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/certh/nightingale#compensatory_tachycardia"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <nightingale:atcCUI>C0001645</nightingale:atcCUI>
+        <nightingale:atcID rdf:resource="http://purl.bioontology.org/ontology/ATC/C07A"/>
+        <rdfs:label>Beta blockers</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#ATC_C08 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#ATC_C08">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Medication"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/certh/nightingale#medicationHasEffect"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/certh/nightingale#inhibits_vasoconstriction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <nightingale:atcCUI>C0006684</nightingale:atcCUI>
+        <nightingale:atcID rdf:resource="http://purl.bioontology.org/ontology/ATC/C08"/>
+        <rdfs:label>Calcium channel blockers</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#ATC_D07 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#ATC_D07">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Medication"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/certh/nightingale#medicationHasEffect"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/certh/nightingale#limit_response_to_hypotension"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <nightingale:atcCUI>C0002845</nightingale:atcCUI>
+        <nightingale:atcID rdf:resource="http://purl.bioontology.org/ontology/ATC/A14A"/>
+        <rdfs:label>Steroids</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#Allergy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#Allergy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/certh/nightingale#Medical_Record"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#AllergyToAcrylate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#AllergyToAcrylate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/certh/nightingale#AllergyToBandagingMaterials"/>
+        <rdfs:label>Allergy to Acrylate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#AllergyToAnesthetics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#AllergyToAnesthetics">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/certh/nightingale#Allergy"/>
+        <nightingale:atcCUI>C0002932</nightingale:atcCUI>
+        <nightingale:atcID rdf:resource="http://purl.bioontology.org/ontology/ATC/N01"/>
+        <rdfs:label>Allergy to Anesthetics</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#AllergyToAnticonvulsants -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#AllergyToAnticonvulsants">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/certh/nightingale#Allergy"/>
+        <nightingale:atcCUI>C0003299</nightingale:atcCUI>
+        <nightingale:atcID rdf:resource="http://purl.bioontology.org/ontology/ATC/N03"/>
+        <rdfs:label>Allergy to Anticonvulsants</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#AllergyToAntisepsisFluids -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#AllergyToAntisepsisFluids">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/certh/nightingale#Allergy"/>
+        <nightingale:atcCUI>C3653284</nightingale:atcCUI>
+        <nightingale:atcID rdf:resource="http://purl.bioontology.org/ontology/ATC/D08"/>
+        <rdfs:label>Allergy to Antisepsis Fluids</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#AllergyToAspirins -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#AllergyToAspirins">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/certh/nightingale#Analgesics"/>
+        <rdfs:label>Allergy to Aspirins</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#AllergyToBandagingMaterials -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#AllergyToBandagingMaterials">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/certh/nightingale#Allergy"/>
+        <rdfs:label>Allergy to Bandaging Materials</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#AllergyToCephalosporins -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#AllergyToCephalosporins">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/certh/nightingale#BroadSpectrumAntibiotics"/>
+        <nightingale:atcCUI>C0304317</nightingale:atcCUI>
+        <nightingale:atcID rdf:resource="http://purl.bioontology.org/ontology/ATC/J01DB"/>
+        <rdfs:label>Allergy to Cephalosporins</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#AllergyToChlorhexidine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#AllergyToChlorhexidine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/certh/nightingale#AllergyToAntisepsisFluids"/>
+        <nightingale:atcCUI>C0008196</nightingale:atcCUI>
+        <nightingale:atcID rdf:resource="http://purl.bioontology.org/ontology/ATC/S02AA09"/>
+        <rdfs:label>Allergy to Chlorhexidine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#AllergyToIBuprofen -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#AllergyToIBuprofen">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/certh/nightingale#Analgesics"/>
+        <rdfs:label>Allergy to iBuprofen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#AllergyToIVMaterials -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#AllergyToIVMaterials">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/certh/nightingale#AllergyToMedicalMaterials"/>
+        <rdfs:label>Allergy to IV materials</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#AllergyToIodine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#AllergyToIodine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/certh/nightingale#AllergyToAntisepsisFluids"/>
+        <nightingale:atcCUI>C0021968</nightingale:atcCUI>
+        <nightingale:atcID rdf:resource="http://purl.bioontology.org/ontology/ATC/D08AG03"/>
+        <rdfs:label>Allergy to Iodine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#AllergyToLatexGloves -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#AllergyToLatexGloves">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/certh/nightingale#AllergyToMedicalMaterials"/>
+        <rdfs:label>Allergy to Latex gloves</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#AllergyToLidocaine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#AllergyToLidocaine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/certh/nightingale#AllergyToAnesthetics"/>
+        <nightingale:atcCUI>C0023660</nightingale:atcCUI>
+        <nightingale:atcID rdf:resource="http://purl.bioontology.org/ontology/ATC/D04AB01"/>
+        <rdfs:label>Allergy to Lidocaine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#AllergyToMedicalMaterials -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#AllergyToMedicalMaterials">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/certh/nightingale#Allergy"/>
+        <rdfs:label>Allergy to  Medical materials</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#AllergyToMethacrylate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#AllergyToMethacrylate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/certh/nightingale#AllergyToBandagingMaterials"/>
+        <rdfs:label>Allergy to Methacrylate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#AllergyToPenicillins -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#AllergyToPenicillins">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/certh/nightingale#BroadSpectrumAntibiotics"/>
+        <nightingale:atcCUI>C0030842</nightingale:atcCUI>
+        <nightingale:atcID rdf:resource="http://purl.bioontology.org/ontology/ATC/J01C"/>
+        <rdfs:label>Allergy to Penicillins</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#AllergyToSulfa-Drugs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#AllergyToSulfa-Drugs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/certh/nightingale#BroadSpectrumAntibiotics"/>
+        <nightingale:atcCUI>C3540018</nightingale:atcCUI>
+        <nightingale:atcID rdf:resource="http://purl.bioontology.org/ontology/ATC/J01E"/>
+        <rdfs:label>Allergy to Sulfa-Drugs</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#Analgesics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#Analgesics">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/certh/nightingale#Allergy"/>
+        <nightingale:atcCUI>C0002771</nightingale:atcCUI>
+        <nightingale:atcID rdf:resource="http://purl.bioontology.org/ontology/ATC/N02"/>
+        <rdfs:label>Allergy to Analgesics</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#Anaphylactic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#Anaphylactic">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Shock"/>
+        <rdfs:label>Anaphylactic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#Autoimmune -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#Autoimmune">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/certh/nightingale#Disease"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/certh/nightingale#diseaseHasEffect"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/certh/nightingale#decreased_response_to_hemoragic_shock"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#BiologicalThreats -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#BiologicalThreats">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Man-made_Disaster"/>
+        <rdfs:label>Biological threats</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#BroadSpectrumAntibiotics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#BroadSpectrumAntibiotics">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/certh/nightingale#Allergy"/>
+        <nightingale:atcCUI>C3653727</nightingale:atcCUI>
+        <nightingale:atcID rdf:resource="http://purl.bioontology.org/ontology/ATC/J01"/>
+        <rdfs:label>Allergy to Broad spectrum antibiotics</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#Cardiogenic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#Cardiogenic">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Shock"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#Chemotherapy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#Chemotherapy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/certh/nightingale#Disease"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/certh/nightingale#diseaseHasEffect"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/certh/nightingale#limit_response_to_hypotension"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <nightingale:snomedCUI>C3665472</nightingale:snomedCUI>
+        <nightingale:snomedID rdf:resource="http://purl.bioontology.org/ontology/SNOMEDCT/367336001"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#Compensatory_Tachycardia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#Compensatory_Tachycardia">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Effect"/>
+        <obo:IAO_0000115>Blunts compensatory tachycardia, decreasing ability to compensate</obo:IAO_0000115>
+        <rdfs:label>Compensatory Tachycardia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#Decreased_Response_to_Hemorrhagic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#Decreased_Response_to_Hemorrhagic">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Effect"/>
+        <obo:IAO_0000115>Decreased reserve to respond to hemorrhagic shock or other physiologic stress related to trauma</obo:IAO_0000115>
+        <rdfs:label>Decreased Response to Hemorrhagic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#Disease -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#Disease">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/certh/nightingale#Medical_Record"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#Earthquake -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#Earthquake">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Natural_Disaster"/>
+        <rdfs:label>Earthquake</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#Epidemics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#Epidemics">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Man-made_Disaster"/>
+        <rdfs:label>Epidemics</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#Fire -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#Fire">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Natural_Disaster"/>
+        <rdfs:label>Fire</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#Flood -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#Flood">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Natural_Disaster"/>
+        <rdfs:label>Flood</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#Heart_Disease -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#Heart_Disease">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/certh/nightingale#Disease"/>
+        <nightingale:snomedCUI>C0018799</nightingale:snomedCUI>
+        <nightingale:snomedID rdf:resource="http://purl.bioontology.org/ontology/SNOMEDCT/56265001"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#Hemorrhage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#Hemorrhage">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Effect"/>
+        <obo:IAO_0000115>The risk of hemorrhage increases</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#Hurricane -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#Hurricane">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Natural_Disaster"/>
+        <rdfs:label>Hurricane</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#Hypovolemic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#Hypovolemic">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Shock"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#ICD10_E06.3 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#ICD10_E06.3">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/certh/nightingale#Autoimmune"/>
+        <nightingale:icd10code>ICD10_E06.3</nightingale:icd10code>
+        <nightingale:snomedCUI>C0677607</nightingale:snomedCUI>
+        <nightingale:snomedID rdf:resource="http://purl.bioontology.org/ontology/SNOMEDCT/21983002"/>
+        <rdfs:label>Hashimoto&apos;s thyroiditis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#ICD10_E10 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#ICD10_E10">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/certh/nightingale#Autoimmune"/>
+        <nightingale:icd10code>ICD10_E10</nightingale:icd10code>
+        <nightingale:snomedCUI>C0011854</nightingale:snomedCUI>
+        <nightingale:snomedID rdf:resource="http://purl.bioontology.org/ontology/SNOMEDCT/46635009"/>
+        <rdfs:label>Type 1 diabetes mellitus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#ICD10_E5 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#ICD10_E5">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/certh/nightingale#Autoimmune"/>
+        <nightingale:icd10code>ICD10_E5</nightingale:icd10code>
+        <nightingale:snomedCUI>C0018213</nightingale:snomedCUI>
+        <nightingale:snomedID rdf:resource="http://purl.bioontology.org/ontology/SNOMEDCT/353295004"/>
+        <rdfs:label>Graves&apos; disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#ICD10_G35 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#ICD10_G35">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/certh/nightingale#Autoimmune"/>
+        <nightingale:icd10code>ICD10_G35</nightingale:icd10code>
+        <nightingale:snomedCUI>C0026769</nightingale:snomedCUI>
+        <nightingale:snomedID rdf:resource="http://purl.bioontology.org/ontology/SNOMEDCT/24700007"/>
+        <rdfs:label>Multiple sclerosis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#ICD10_I11 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#ICD10_I11">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/certh/nightingale#Heart_Disease"/>
+        <nightingale:icd10code>ICD10_I11</nightingale:icd10code>
+        <nightingale:snomedCUI>C0152105</nightingale:snomedCUI>
+        <nightingale:snomedID rdf:resource="http://purl.bioontology.org/ontology/SNOMEDCT/64715009"/>
+        <rdfs:label>Hypertensive heart disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#ICD10_I21 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#ICD10_I21">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/certh/nightingale#Heart_Disease"/>
+        <nightingale:icd10code>ICD10_I21</nightingale:icd10code>
+        <nightingale:snomedCUI>C0027051</nightingale:snomedCUI>
+        <nightingale:snomedID rdf:resource="http://purl.bioontology.org/ontology/SNOMEDCT/22298006"/>
+        <rdfs:label>Myocardial infarction (heart attack)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#ICD10_I25.1 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#ICD10_I25.1">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/certh/nightingale#Heart_Disease"/>
+        <nightingale:icd10code>ICD10_I25.1</nightingale:icd10code>
+        <nightingale:snomedCUI>C1956346</nightingale:snomedCUI>
+        <nightingale:snomedID rdf:resource="http://purl.bioontology.org/ontology/SNOMEDCT/414024009"/>
+        <rdfs:label>Coronary artery disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#ICD10_I27 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#ICD10_I27">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/certh/nightingale#Heart_Disease"/>
+        <nightingale:icd10code>ICD10_I27</nightingale:icd10code>
+        <nightingale:snomedCUI>C0034087</nightingale:snomedCUI>
+        <nightingale:snomedID>Pulmonary valve disorder</nightingale:snomedID>
+        <rdfs:label>Pulmonary heart disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#ICD10_I35 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#ICD10_I35">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/certh/nightingale#Heart_Disease"/>
+        <nightingale:icd10code>ICD10_I35</nightingale:icd10code>
+        <rdfs:label>ICD10_I35</rdfs:label>
+        <rdfs:label>Nonrheumatic aortic valve disorders</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#ICD10_I35.0 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#ICD10_I35.0">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/certh/nightingale#Heart_Disease"/>
+        <nightingale:icd10code>ICD10_I35.0</nightingale:icd10code>
+        <nightingale:snomedCUI>C0003507</nightingale:snomedCUI>
+        <nightingale:snomedID rdf:resource="http://purl.bioontology.org/ontology/SNOMEDCT/60573004"/>
+        <rdfs:label>Aortic valve stenosis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#ICD10_I39 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#ICD10_I39">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/certh/nightingale#Heart_Disease"/>
+        <nightingale:icd10code>ICD10_I39</nightingale:icd10code>
+        <nightingale:snomedCUI>C1637835</nightingale:snomedCUI>
+        <nightingale:snomedID rdf:resource="http://purl.bioontology.org/ontology/SNOMEDCT/195012000"/>
+        <rdfs:label>Endocarditis and heart valve disorders in diseases classified elsewhere</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#ICD10_I42 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#ICD10_I42">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/certh/nightingale#Heart_Disease"/>
+        <nightingale:icd10code>ICD10_I42</nightingale:icd10code>
+        <nightingale:snomedCUI>C0878544</nightingale:snomedCUI>
+        <nightingale:snomedID rdf:resource="http://purl.bioontology.org/ontology/SNOMEDCT/85898001"/>
+        <rdfs:label>Cardiomyopathy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#ICD10_I48 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#ICD10_I48">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/certh/nightingale#Heart_Disease"/>
+        <nightingale:icd10code>ICD10_I48</nightingale:icd10code>
+        <nightingale:snomedCUI>C0004238</nightingale:snomedCUI>
+        <nightingale:snomedID rdf:resource="http://purl.bioontology.org/ontology/SNOMEDCT/49436004"/>
+        <rdfs:label>Atrial fibrillation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#ICD10_I49 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#ICD10_I49">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/certh/nightingale#Heart_Disease"/>
+        <nightingale:icd10code>ICD10_I49</nightingale:icd10code>
+        <nightingale:snomedCUI>C0003811</nightingale:snomedCUI>
+        <nightingale:snomedID rdf:resource="http://purl.bioontology.org/ontology/SNOMEDCT/698247007"/>
+        <rdfs:label>Cardiac arrhythmias</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#ICD10_I50 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#ICD10_I50">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/certh/nightingale#Heart_Disease"/>
+        <nightingale:icd10code>ICD10_I50</nightingale:icd10code>
+        <nightingale:snomedCUI>C0018801,C1959583</nightingale:snomedCUI>
+        <nightingale:snomedID rdf:resource="http://purl.bioontology.org/ontology/SNOMEDCT/84114007"/>
+        <rdfs:label>Heart failure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#ICD10_I71.4 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#ICD10_I71.4">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/certh/nightingale#Heart_Disease"/>
+        <nightingale:icd10code>ICD10_I71.4</nightingale:icd10code>
+        <nightingale:snomedCUI>C0003486</nightingale:snomedCUI>
+        <nightingale:snomedID rdf:resource="http://purl.bioontology.org/ontology/SNOMEDCT/67362008"/>
+        <rdfs:label>Aortic aneurysm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#ICD10_K50 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#ICD10_K50">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/certh/nightingale#Autoimmune"/>
+        <nightingale:icd10code>ICD10_K50</nightingale:icd10code>
+        <nightingale:snomedCUI>C0021390</nightingale:snomedCUI>
+        <nightingale:snomedID rdf:resource="http://purl.bioontology.org/ontology/SNOMEDCT/24526004"/>
+        <rdfs:label>Inflammatory bowel disease (IBD)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#ICD10_K51 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#ICD10_K51">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/certh/nightingale#Autoimmune"/>
+        <nightingale:icd10code>ICD10_K51</nightingale:icd10code>
+        <nightingale:snomedCUI>C0010346</nightingale:snomedCUI>
+        <nightingale:snomedID rdf:resource="http://purl.bioontology.org/ontology/SNOMEDCT/34000006"/>
+        <rdfs:label>Crohn&apos;s disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#ICD10_K90 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#ICD10_K90">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/certh/nightingale#Autoimmune"/>
+        <nightingale:icd10code>ICD10_K90</nightingale:icd10code>
+        <nightingale:snomedCUI>C0007570</nightingale:snomedCUI>
+        <nightingale:snomedID rdf:resource="http://purl.bioontology.org/ontology/SNOMEDCT/396331005"/>
+        <rdfs:label>Celiac disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#ICD10_L40 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#ICD10_L40">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/certh/nightingale#Autoimmune"/>
+        <nightingale:icd10code>ICD10_L40</nightingale:icd10code>
+        <nightingale:snomedCUI>C0033860</nightingale:snomedCUI>
+        <nightingale:snomedID rdf:resource="http://purl.bioontology.org/ontology/SNOMEDCT/9014002"/>
+        <rdfs:label>Psoriasis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#ICD10_M05 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#ICD10_M05">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/certh/nightingale#Autoimmune"/>
+        <nightingale:icd10code>ICD10_M05</nightingale:icd10code>
+        <nightingale:snomedCUI>C1306838,C0003873</nightingale:snomedCUI>
+        <nightingale:snomedID rdf:resource="http://purl.bioontology.org/ontology/SNOMEDCT/69896004"/>
+        <rdfs:label>Rheumatoid arthritis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#ICD10_M32 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#ICD10_M32">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/certh/nightingale#Autoimmune"/>
+        <nightingale:icd10code>ICD10_M32</nightingale:icd10code>
+        <nightingale:snomedCUI>C0024141</nightingale:snomedCUI>
+        <nightingale:snomedID rdf:resource="http://purl.bioontology.org/ontology/SNOMEDCT/55464009"/>
+        <rdfs:label>Systemic lupus erythematosus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#ICD10_M35 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#ICD10_M35">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/certh/nightingale#Autoimmune"/>
+        <nightingale:icd10code>ICD10_M35</nightingale:icd10code>
+        <nightingale:snomedCUI>C0086981,C1527336</nightingale:snomedCUI>
+        <nightingale:snomedID rdf:resource="http://purl.bioontology.org/ontology/SNOMEDCT/83901003"/>
+        <rdfs:label>Sjogren&apos;s syndrome</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#ICD10_N17 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#ICD10_N17">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/certh/nightingale#Kidney_Failure"/>
+        <nightingale:icd10code>ICD10_N17</nightingale:icd10code>
+        <nightingale:snomedCUI>C4518597</nightingale:snomedCUI>
+        <nightingale:snomedID rdf:resource="http://purl.bioontology.org/ontology/SNOMEDCT/733137002"/>
+        <rdfs:label>Acute kidney failure (stage 1)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#ICD10_N18 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#ICD10_N18">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/certh/nightingale#Kidney_Failure"/>
+        <nightingale:icd10code>ICD10_N18</nightingale:icd10code>
+        <nightingale:snomedCUI>C1561643,C0403447</nightingale:snomedCUI>
+        <nightingale:snomedID rdf:resource="http://purl.bioontology.org/ontology/SNOMEDCT/709044004"/>
+        <rdfs:label>Chronic kidney disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#ICD10_T82.0 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#ICD10_T82.0">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/certh/nightingale#Heart_Disease"/>
+        <nightingale:icd10code>ICD10_T82.0</nightingale:icd10code>
+        <nightingale:snomedCUI>C0347934</nightingale:snomedCUI>
+        <nightingale:snomedID rdf:resource="http://purl.bioontology.org/ontology/SNOMEDCT/213036006"/>
+        <rdfs:label>Mechanical complication of heart valve prosthesis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#ICD10_Z08 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#ICD10_Z08">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/certh/nightingale#Chemotherapy"/>
+        <nightingale:icd10code>ICD10_Z08</nightingale:icd10code>
+        <nightingale:snomedCUI>C3698516</nightingale:snomedCUI>
+        <nightingale:snomedID>Consultation for malignant neoplasm disease (procedure)</nightingale:snomedID>
+        <rdfs:label>Consultation for malignant neoplasm disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#ICD10_Z09 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#ICD10_Z09">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/certh/nightingale#Chemotherapy"/>
+        <nightingale:icd10code>ICD10_Z09</nightingale:icd10code>
+        <nightingale:snomedCUI>C3698516</nightingale:snomedCUI>
+        <nightingale:snomedID rdf:resource="http://purl.bioontology.org/ontology/SNOMEDCT/698308008"/>
+        <rdfs:label>Encounter for follow-up examination after completed treatment for conditions other than malignant neoplasm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#ICD10_Z51 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#ICD10_Z51">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/certh/nightingale#Chemotherapy"/>
+        <nightingale:icd10code>ICD10_Z51</nightingale:icd10code>
+        <nightingale:snomedCUI>C0203489</nightingale:snomedCUI>
+        <nightingale:snomedID rdf:resource="http://purl.bioontology.org/ontology/SNOMEDCT/65263004"/>
+        <rdfs:label>Encounter for other specified aftercare and medical care</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#ICD10_Z94 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#ICD10_Z94">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/certh/nightingale#Disease"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/certh/nightingale#diseaseHasEffect"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/certh/nightingale#limit_response_to_hypotension"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <nightingale:icd10code>ICD10_Z94</nightingale:icd10code>
+        <nightingale:snomedCUI>C0332835</nightingale:snomedCUI>
+        <nightingale:snomedID rdf:resource="http://purl.bioontology.org/ontology/SNOMEDCT/24486003"/>
+        <rdfs:label>Transplants</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#ICD10_Z94.0 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#ICD10_Z94.0">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/certh/nightingale#ICD10_Z94"/>
+        <nightingale:icd10code>IDC10_Z94.0</nightingale:icd10code>
+        <nightingale:snomedCUI>C1261317</nightingale:snomedCUI>
+        <nightingale:snomedID rdf:resource="http://purl.bioontology.org/ontology/SNOMEDCT/70948008"/>
+        <rdfs:label>Kidney transplant status</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#ICD10_Z94.1 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#ICD10_Z94.1">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/certh/nightingale#ICD10_Z94"/>
+        <nightingale:icd10code>ICD10_Z94.1</nightingale:icd10code>
+        <nightingale:snomedCUI>C0018823</nightingale:snomedCUI>
+        <nightingale:snomedID rdf:resource="http://purl.bioontology.org/ontology/SNOMEDCT/32413006"/>
+        <rdfs:label>Heart transplant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#ICD10_Z94.2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#ICD10_Z94.2">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/certh/nightingale#ICD10_Z94"/>
+        <nightingale:icd10code>ICD10_Z94.2</nightingale:icd10code>
+        <nightingale:snomedCUI>C0278427</nightingale:snomedCUI>
+        <nightingale:snomedID rdf:resource="http://purl.bioontology.org/ontology/SNOMEDCT/10047002"/>
+        <rdfs:label>Lung Transplant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#ICD10_Z94.3 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#ICD10_Z94.3">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/certh/nightingale#ICD10_Z94"/>
+        <nightingale:icd10code>ICD10_Z94.3</nightingale:icd10code>
+        <nightingale:snomedCUI>C4305587</nightingale:snomedCUI>
+        <nightingale:snomedID rdf:resource="http://purl.bioontology.org/ontology/SNOMEDCT/739025007"/>
+        <rdfs:label>Heart lung transplant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#ICD10_Z94.4 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#ICD10_Z94.4">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/certh/nightingale#ICD10_Z94"/>
+        <nightingale:icd10code>ICD10_Z94.4</nightingale:icd10code>
+        <nightingale:snomedCUI>C0040746</nightingale:snomedCUI>
+        <nightingale:snomedID rdf:resource="http://purl.bioontology.org/ontology/SNOMEDCT/3860006"/>
+        <rdfs:label>Liver transplant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#ICD10_Z94.5 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#ICD10_Z94.5">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/certh/nightingale#ICD10_Z94"/>
+        <nightingale:icd10code>ICD10_Z94.5</nightingale:icd10code>
+        <nightingale:snomedCUI>C0278436</nightingale:snomedCUI>
+        <nightingale:snomedID rdf:resource="http://purl.bioontology.org/ontology/SNOMEDCT/90518008"/>
+        <rdfs:label>Intestine transplant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#ICD10_Z94.6 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#ICD10_Z94.6">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/certh/nightingale#ICD10_Z94"/>
+        <nightingale:icd10code>ICD10_Z94.6</nightingale:icd10code>
+        <nightingale:snomedCUI>C4304729</nightingale:snomedCUI>
+        <nightingale:snomedID rdf:resource="http://purl.bioontology.org/ontology/SNOMEDCT/719423002"/>
+        <rdfs:label>Pancreas transplant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#ICD10_Z94.8 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#ICD10_Z94.8">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/certh/nightingale#ICD10_Z94"/>
+        <nightingale:icd10code>ICD10_Z94.8</nightingale:icd10code>
+        <rdfs:label>Other transplanted organ and tissue status</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#ICD10_Z94.9 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#ICD10_Z94.9">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/certh/nightingale#ICD10_Z94"/>
+        <nightingale:icd10code>ICD10_Z94.9</nightingale:icd10code>
+        <rdfs:label>Transplanted organ and tissue status, unspecified</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#ICD10_Z95.2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#ICD10_Z95.2">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/certh/nightingale#Heart_Disease"/>
+        <nightingale:icd10code>ICD10_Z95.2</nightingale:icd10code>
+        <nightingale:snomedCUI>C4545029</nightingale:snomedCUI>
+        <nightingale:snomedID rdf:resource="http://purl.bioontology.org/ontology/SNOMEDCT/737277001"/>
+        <rdfs:label>Presence of prosthetic heart valve</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#ICD10_Z95.3 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#ICD10_Z95.3">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/certh/nightingale#Heart_Disease"/>
+        <nightingale:icd10code>ICD10_Z95.3</nightingale:icd10code>
+        <nightingale:snomedCUI>C0441283</nightingale:snomedCUI>
+        <nightingale:snomedID rdf:resource="http://purl.bioontology.org/ontology/SNOMEDCT/257343005"/>
+        <rdfs:label>Presence of xenogenic heart valve</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#ICD10_Z95.4 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#ICD10_Z95.4">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/certh/nightingale#Heart_Disease"/>
+        <nightingale:icd10code>ICD10_Z95.4</nightingale:icd10code>
+        <nightingale:snomedCUI>C0018825</nightingale:snomedCUI>
+        <nightingale:snomedID rdf:resource="http://purl.bioontology.org/ontology/SNOMEDCT/25510005"/>
+        <rdfs:label>Presence of other heart-valve replacement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#ICD_Z49 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#ICD_Z49">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/certh/nightingale#Disease"/>
+        <nightingale:icd10code>IDC_Z49</nightingale:icd10code>
+        <nightingale:snomedCUI>C1272335</nightingale:snomedCUI>
+        <nightingale:snomedID rdf:resource="http://purl.bioontology.org/ontology/SNOMEDCT/385973000"/>
+        <rdfs:label>Dialysis Treatment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#IDC10_I06.0 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#IDC10_I06.0">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/certh/nightingale#Heart_Disease"/>
+        <nightingale:icd10code>IDC10_I06.0</nightingale:icd10code>
+        <nightingale:snomedCUI>C0155567</nightingale:snomedCUI>
+        <nightingale:snomedID rdf:resource="http://purl.bioontology.org/ontology/SNOMEDCT/72011007"/>
+        <rdfs:label>Rheumatic aortic stenosis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#Kidney_Failure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#Kidney_Failure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/certh/nightingale#Disease"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/certh/nightingale#diseaseHasEffect"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/certh/nightingale#limit_response_to_hypotension"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#Limit_Response_to_Hypotension -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#Limit_Response_to_Hypotension">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Effect"/>
+        <obo:IAO_0000115>It limits the patient&apos;s ability to respond to hypotension</obo:IAO_0000115>
+        <rdfs:label>Limit Response to Hypotension</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#Long_Term_Drug_Use -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#Long_Term_Drug_Use">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/certh/nightingale#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#MassTerroristAttacks -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#MassTerroristAttacks">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Man-made_Disaster"/>
+        <rdfs:label>Mass terrorist attacks</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#Medical_Record -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#Medical_Record">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#Neurogenic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#Neurogenic">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Shock"/>
+        <rdfs:label>Neurogenic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#NonrheumaticAorticValveStenosisWithRegurgitation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#NonrheumaticAorticValveStenosisWithRegurgitation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/certh/nightingale#ICD10_I35"/>
+        <nightingale:snomedCUI>C3839362</nightingale:snomedCUI>
+        <nightingale:snomedID rdf:resource="http://purl.bioontology.org/ontology/SNOMEDCT/703236000"/>
+        <rdfs:label>Nonrheumatic aortic valve stenosis with regurgitation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#Septic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#Septic">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Shock"/>
+        <rdfs:label>Septic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#Vasoconstriction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/nightingale#Vasoconstriction">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Effect"/>
+        <obo:IAO_0000115>Inhibits vasoconstriction, decreasing ability to compensate</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/ontologies/nightingale#Victim -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/certh/ontologies/nightingale#Victim">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#compensatory_tachycardia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/certh/nightingale#compensatory_tachycardia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/certh/nightingale#Compensatory_Tachycardia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#decreased_response_to_hemoragic_shock -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/certh/nightingale#decreased_response_to_hemoragic_shock">
+        <rdf:type rdf:resource="http://www.semanticweb.org/certh/nightingale#Decreased_Response_to_Hemorrhagic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#hemorrhage -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/certh/nightingale#hemorrhage">
+        <rdf:type rdf:resource="http://www.semanticweb.org/certh/nightingale#Hemorrhage"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#inhibits_vasoconstriction -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/certh/nightingale#inhibits_vasoconstriction">
+        <rdf:type rdf:resource="http://www.semanticweb.org/certh/nightingale#Vasoconstriction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/certh/nightingale#limit_response_to_hypotension -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/certh/nightingale#limit_response_to_hypotension">
+        <rdf:type rdf:resource="http://www.semanticweb.org/certh/nightingale#Limit_Response_to_Hypotension"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
