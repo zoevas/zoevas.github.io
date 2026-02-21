@@ -1206,3 +1206,17 @@ https://templatemo.com/tm-593-personal-shape
                 padding: 0 1rem;
             }
         }
+		
+		/* Fix invisible buttons on white pages (blog posts) */
+.about .cta-button,
+.portfolio .cta-button {
+    background-color: #111;
+    color: #ffffff !important;
+    border: 2px solid #111;
+}
+
+.about .cta-button:hover,
+.portfolio .cta-button:hover {
+    background-color: #333;
+    color: #ffffff !important;
+}
