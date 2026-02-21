@@ -22,7 +22,7 @@
     <!-- Blog Post -->
     <section class="portfolio">
         <div class="container">
-            <h1 class="section-title">My Journey into Semantic Engineering</h1>
+            <h1 class="section-title">An health ontology for disaster management</h1>
             
 		<p>
 			I designed a health ontology to assist in triaging victims during disasters. 
@@ -33,7 +33,15 @@
 
 		<p>
 			For each victim, the ontology models key information including their medical health record, vital signs, and triage status, enabling more efficient and consistent decision-making in critical situations.
+			
 		</p>
+<div class="image-container">
+    <img src="images/disease_medication.png" alt="Diseases and medications relationships" style="max-width:100%; height:auto;">
+</div>
+
+<p>
+In this ontology, the relationships between diseases, medications, and their corresponding effects are automatically inferred through OWL restrictions. Specifically, each disease class is linked to its physiological or clinical consequences using a diseaseHasEffect object property, while each medication class is associated with the effects it produces via medicationHasEffect. By defining OWL class restrictions—for example, specifying that a particular disease must have a certain effect or that a medication must produce a certain effect—these relationships are implicitly enforced in the ontology. As a result, any instance of a disease or medication automatically inherits the corresponding effect relationships, reducing manual annotation and ensuring consistency across the knowledge base.
+</p>
 
             <br>
             <a href="blog.html" class="purple-text-button">← Back to Blog</a>
