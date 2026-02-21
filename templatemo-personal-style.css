@@ -1207,16 +1207,12 @@ https://templatemo.com/tm-593-personal-shape
             }
         }
 		
-		/* Fix invisible buttons on white pages (blog posts) */
-.about .cta-button,
-.portfolio .cta-button {
-    background-color: #111;
-    color: #ffffff !important;
-    border: 2px solid #111;
-}
+		.purple-text-button {
+			color: #6a0dad; /* purple text */
+		}
 
-.about .cta-button:hover,
-.portfolio .cta-button:hover {
-    background-color: #333;
-    color: #ffffff !important;
-}
+		.purple-text-button:hover {
+			background-color: #6a0dad; /* purple background on hover */
+			color: #ffffff; /* white text on hover */
+			border-color: #6a0dad;
+		}
