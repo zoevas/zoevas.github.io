@@ -65,11 +65,14 @@ As an example, in the ontology, a disease class can have restrictions linking it
 &lt;/owl:Class&gt;
 </pre>
 </div>
-
+<br>
 <p>
 This restriction specifies that the disease class <strong>Transplants</strong> has a physiological effect, <em>limit_response_to_hypotension</em>, through the <code>diseaseHasEffect</code> property. By including <strong>ICD-10 codes</strong> (like <code>ICD10_Z94</code>) and <strong>SNOMED IDs</strong> (like <code>C0332835</code>), the ontology supports federated queries across biomedical databases. This allows retrieving additional information from external resources, improving interoperability and enriching decision support during emergency scenarios.
 </p>
+<br>
+<p> I mapped the disease ontology and the medication ontology to established external ontologies. Specifically, the disease ontology was aligned with the ICD-10 ontology, and the medication ontology with the ATC ontology. This integration enhances the reasoning process by incorporating a richer and more standardized body of domain knowledge.</p>
 
+<br>
 <p>
 You can download the full health ontology in OWL format here:
 </p>
